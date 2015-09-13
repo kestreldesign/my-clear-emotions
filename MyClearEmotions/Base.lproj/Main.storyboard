@@ -47,15 +47,45 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confusedicon" translatesAutoresizingMaskIntoConstraints="NO" id="vkR-Kk-Lqm">
                                 <rect key="frame" x="20" y="221" width="100" height="100"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guj-ha-zaa">
+                                <rect key="frame" x="282" y="319" width="47" height="30"/>
+                                <state key="normal" title="unsure">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeMeUnsure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1i-GU-4c1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-6K-qGS">
+                                <rect key="frame" x="38" y="319" width="64" height="30"/>
+                                <state key="normal" title="confused">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeMeConfused:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iX8-8H-yMs"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unsure_iPhone6" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-hm-aMQ">
+                                <rect key="frame" x="-3" y="0.0" width="378" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confused_iPhone6" translatesAutoresizingMaskIntoConstraints="NO" id="L58-zL-cqx">
+                                <rect key="frame" x="-3" y="0.0" width="378" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="changeEmotionButton" destination="CxX-rZ-Az5" id="Z1y-Ei-YYG"/>
+                        <outlet property="confusedButton" destination="i9c-6K-qGS" id="2yu-Ph-pCb"/>
+                        <outlet property="confusedFull" destination="L58-zL-cqx" id="VB2-Q3-5je"/>
+                        <outlet property="confusedIcon" destination="vkR-Kk-Lqm" id="SLB-ly-kV3"/>
                         <outlet property="scaredButton" destination="30L-nO-FTv" id="tgy-zr-jhj"/>
                         <outlet property="scaredFull" destination="X2O-cU-Toe" id="OWa-fb-lgU"/>
                         <outlet property="scaredIcon" destination="pGU-sN-KJa" id="YAd-mP-GV5"/>
+                        <outlet property="unsureButton" destination="Guj-ha-zaa" id="Tbt-N1-E5v"/>
+                        <outlet property="unsureFull" destination="O3j-hm-aMQ" id="Z6Q-zZ-bCO"/>
+                        <outlet property="unsureIcon" destination="nRF-RB-4rR" id="oNo-fi-Qky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,9 +94,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="confused_iPhone6" width="750" height="1333"/>
         <image name="confusedicon" width="450" height="450"/>
         <image name="scared_iPhone6" width="750" height="1333"/>
         <image name="scaredicon" width="450" height="450"/>
+        <image name="unsure_iPhone6" width="750" height="1333"/>
         <image name="unsureicon" width="450" height="450"/>
     </resources>
 </document>

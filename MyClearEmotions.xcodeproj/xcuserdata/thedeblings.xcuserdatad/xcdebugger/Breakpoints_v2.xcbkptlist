@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyClearEmotions/ViewController.swift"
-            timestampString = "463843590.731432"
+            timestampString = "463848313.720474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "makeMeScared(_:)"
             landmarkType = "5">
          </BreakpointContent>

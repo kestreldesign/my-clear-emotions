@@ -44,28 +44,38 @@ class ViewController: UIViewController {
     }
     
     @IBAction func makeMeUnsure(sender: AnyObject) {
+        //hide all buttons and icons
+        hideAllButtonsAndIcons(true)
+        
+        //show the emotion we want
+        unsureFull.hidden = false
+        changeEmotionButton.hidden = false;
     }
     
     @IBAction func makeMeConfused(sender: AnyObject) {
+        //hide all buttons and icons
+        hideAllButtonsAndIcons(true)
+        
+        //show the emotion we want
+        confusedFull.hidden = false
+        changeEmotionButton.hidden = false;
     }
 
 
     @IBAction func changeMyEmotion(sender: AnyObject) {
-        //unhide all buttons and icons: AnyObject) {
         //hide all buttons and icons
         hideAllButtonsAndIcons(false)
         
         //hide the fullscreen emotions (this captures whichever one is full)
         scaredFull.hidden = true
-        scaredFull.hidden = true
-        scaredFull.hidden = true
+        unsureFull.hidden = true
+        confusedFull.hidden = true
         
         //hid the chenge emotion button
         changeEmotionButton.hidden = true;
     }
     
     func hideAllButtonsAndIcons(hidden: Bool){
-        
         scaredButton.hidden = hidden
         scaredIcon.hidden = hidden
         unsureButton.hidden = hidden

@@ -38,49 +38,19 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="makeMeScared:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oar-E8-4Yg"/>
+                                    <action selector="makeMeScared:" destination="BYZ-38-t0r" eventType="touchUpInside" id="txQ-QV-e6Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39H-YV-Cud">
-                                <rect key="frame" x="39" y="319" width="64" height="30"/>
-                                <state key="normal" title="confused">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="makeMeConfused:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Gc-eY-v95"/>
-                                    <action selector="makeMeScared:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IYF-hM-RR2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX1-s6-2La">
-                                <rect key="frame" x="282" y="319" width="47" height="30"/>
-                                <state key="normal" title="unsure">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="makeMeScared:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHV-AP-rfe"/>
-                                    <action selector="makeMeUnsure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yeM-Ff-WD2"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unsureicon" translatesAutoresizingMaskIntoConstraints="NO" id="4dh-nD-7D8">
-                                <rect key="frame" x="255" y="221" width="100" height="100"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confusedicon" translatesAutoresizingMaskIntoConstraints="NO" id="D3H-lN-Ry5">
-                                <rect key="frame" x="20" y="221" width="100" height="100"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="changeEmotionButton" destination="CxX-rZ-Az5" id="Z1y-Ei-YYG"/>
-                        <outlet property="confusedButton" destination="39H-YV-Cud" id="2LA-dt-reD"/>
-                        <outlet property="confusedIcon" destination="D3H-lN-Ry5" id="xGA-j5-foo"/>
                         <outlet property="makeMeScared" destination="pGU-sN-KJa" id="4UB-sF-dUf"/>
                         <outlet property="scaredButton" destination="30L-nO-FTv" id="tgy-zr-jhj"/>
                         <outlet property="scaredFull" destination="X2O-cU-Toe" id="OWa-fb-lgU"/>
                         <outlet property="scaredIcon" destination="pGU-sN-KJa" id="YAd-mP-GV5"/>
-                        <outlet property="unsureButton" destination="LX1-s6-2La" id="zgz-N1-l52"/>
-                        <outlet property="unsureIcon" destination="4dh-nD-7D8" id="e5w-QP-kdr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,9 +59,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="confusedicon" width="450" height="450"/>
         <image name="scared_iPhone6" width="750" height="1333"/>
         <image name="scaredicon" width="450" height="450"/>
-        <image name="unsureicon" width="450" height="450"/>
     </resources>
 </document>

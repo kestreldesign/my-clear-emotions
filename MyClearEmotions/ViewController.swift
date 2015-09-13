@@ -11,12 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var scaredIcon: UIImageView!
-    @IBOutlet weak var confusedIcon: UIImageView!
-    @IBOutlet weak var unsureIcon: UIImageView!
+
     
     @IBOutlet weak var scaredButton: UIButton!
-    @IBOutlet weak var confusedButton: UIButton!
-    @IBOutlet weak var unsureButton: UIButton!
+ 
     
     @IBOutlet weak var scaredFull: UIImageView!
     
@@ -44,10 +42,7 @@ class ViewController: UIViewController {
         scaredFull.hidden = false
         changeEmotionButton.hidden = false;
     }
-    @IBAction func makeMeConfused(sender: AnyObject) {
-    }
-    @IBAction func makeMeUnsure(sender: AnyObject) {
-    }
+
 
     @IBAction func changeMyEmotion(sender: AnyObject) {
         scaredButton.hidden = false

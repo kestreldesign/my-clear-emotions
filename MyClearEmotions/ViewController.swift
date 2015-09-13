@@ -11,8 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var scaredIcon: UIImageView!
-    @IBOutlet weak var scaredFull: UIImageView!
+    @IBOutlet weak var confusedIcon: UIImageView!
+    @IBOutlet weak var unsureIcon: UIImageView!
+    
     @IBOutlet weak var scaredButton: UIButton!
+    @IBOutlet weak var confusedButton: UIButton!
+    @IBOutlet weak var unsureButton: UIButton!
+    
+    @IBOutlet weak var scaredFull: UIImageView!
+    
     @IBOutlet weak var changeEmotionButton: UIButton!
     
     override func viewDidLoad() {
@@ -28,10 +35,18 @@ class ViewController: UIViewController {
     @IBAction func makeMeScared(sender: AnyObject) {
         scaredButton.hidden = true
         scaredIcon.hidden = true
+        scaredButton.hidden = true
+        scaredIcon.hidden = true
+        scaredButton.hidden = true
+        scaredIcon.hidden = true
         //hide all other buttons
         
         scaredFull.hidden = false
         changeEmotionButton.hidden = false;
+    }
+    @IBAction func makeMeConfused(sender: AnyObject) {
+    }
+    @IBAction func makeMeUnsure(sender: AnyObject) {
     }
 
     @IBAction func changeMyEmotion(sender: AnyObject) {
